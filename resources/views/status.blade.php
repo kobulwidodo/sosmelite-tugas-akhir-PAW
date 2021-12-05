@@ -144,7 +144,7 @@
                                                 </x-slot>
 
                                                 <x-slot name="content">
-                                                    <form action="{{ route('reply.destroy', $status->identifier) }}" method="POST">
+                                                    <form action="{{ route('reply.destroy', $reply->id) }}" method="POST">
                                                         @csrf
                                                         @method('delete')
                                                         <x-dropdown-button type="submit" name="delete">
